@@ -20,7 +20,7 @@ android {
 }
 
 artifacts {
-    archives file('/Users/ibm/AndroidStudioProjects/Quiz/app/build/outputs/apk/debug/app-debug.apk')
+    archives file('/application/app/build/outputs/apk/release/app-release-unsigned.apk')
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

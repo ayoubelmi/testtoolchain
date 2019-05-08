@@ -17,7 +17,7 @@ RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS_VERSIO
     "platform-tools"
 RUN mkdir /application
 WORKDIR /application
-COPY ./testtoolchain /application 
+COPY . /application 
 #RUN cd /application/app/build/outputs/apk/release
 ENTRYPOINT ./gradlew build \
            && ./gradlew uploadArchives
